@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AnimalHipsterTest

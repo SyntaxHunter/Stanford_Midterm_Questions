@@ -18,23 +18,18 @@ public class AnimalHipster {
 		boolean hipster;
 		
 		for(int i = 0; i < network.size(); i++){
-			hipster = false;
+			hipster = true;
+			
 			for(int j = 0; j < network.get(persons[i]).size(); j++){
 				if(favoriteAnimals.get(persons[i]).equals(favoriteAnimals.get(network.get(persons[i]).get(j))))
 					hipster = false;
 			}
+			
 			if(hipster)
 				hipsters.add(persons[i]);
 		}
 		
-		for(int i = 0; i < hipsters.size(); i++)
-			System.out.print(hipsters.get(i));
-		System.out.println();
-		
-		if(hipsters.isEmpty())
-			return null;
-		else
-			return hipsters;
+		return hipsters;
 	}
 
 }
